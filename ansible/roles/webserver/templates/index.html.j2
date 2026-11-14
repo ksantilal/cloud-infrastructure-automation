@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KloudBuild Technologies</title>
+</head>
+
+<body>
+
+    <h1>🚀 KloudBuild Application</h1>
+
+    <h2>Infrastructure Automation Project</h2>
+
+    <p>
+        This application server was provisioned using
+        <strong>Terraform</strong> and configured using
+        <strong>Ansible</strong>.
+    </p>
+
+    <hr>
+
+    <p>
+        <strong>Server:</strong>
+        {{ inventory_hostname }}
+    </p>
+
+    <p>
+        <strong>Private IP:</strong>
+        {{ ansible_default_ipv4.address }}
+    </p>
+
+    <p>
+        <strong>Operating System:</strong>
+        {{ ansible_distribution }}
+        {{ ansible_distribution_version }}
+    </p>
+
+    <hr>
+
+    <p>
+        Vyomanant Academy — Real-World DevOps Project
+    </p>
+
+</body>
+</html>

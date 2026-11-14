@@ -1,0 +1,9 @@
+---
+- name: Configure KloudBuild application servers
+  hosts: app_servers
+  become: true
+  gather_facts: true
+
+  roles:
+    - common
+    - webserver
