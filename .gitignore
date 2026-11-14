@@ -6,3 +6,4 @@ crash.*.log
 *.tfplan
 backend.hcl
 terraform.tfvars
+ansible/inventory/dev.ini
